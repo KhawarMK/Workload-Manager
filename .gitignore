@@ -1,0 +1,27 @@
+
+# Gradle and build output
+.gradle/
+**/build/
+*.apk
+*.aab
+
+# Android Studio
+.idea/
+*.iml
+.cxx/
+.externalNativeBuild/
+captures/
+
+# Machine-specific files
+local.properties
+.DS_Store
+Thumbs.db
+
+# Signing keys
+*.jks
+*.keystore
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
