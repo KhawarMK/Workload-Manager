@@ -1,0 +1,79 @@
+@startuml use-case-diagram
+title Academic Planner - UML Use Case Diagram
+
+left to right direction
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam nodesep 20
+skinparam ranksep 60
+skinparam usecase {
+  BorderColor #orange
+}
+
+
+actor "Student" as Student
+actor "Android System" as Android
+
+rectangle "Academic Planner App" {
+
+  rectangle "Set up" {
+    usecase "UC1\nManage modules" as UC1
+    usecase "UC2\nManage assignments" as UC2
+    usecase "UC3\nBreak assignment\ninto tasks" as UC3
+    usecase "UC4\nEnter timetable" as UC4
+    usecase "UC5\nSet study availability" as UC5
+  }
+
+  rectangle "Plan" {
+    usecase "UC6\nView workload summary" as UC6
+    usecase "UC7\nGenerate study schedule" as UC7
+    usecase "UC8\nView schedule" as UC8
+    usecase "Calculate remaining workload\nand available time" as CALC
+    usecase "Warn when workload\ncannot fit" as WARN
+  }
+
+  rectangle "Track" {
+    usecase "UC9\nLog task progress" as UC9
+    usecase "UC10\nMark session missed" as UC10
+    usecase "UC11\nReschedule study sessions" as UC11
+    usecase "UC12\nView progress and\nestimate accuracy" as UC12
+  }
+
+  rectangle "Mobile context" {
+    usecase "UC13\nReceive reminders" as UC13
+    usecase "UC14\nView next class\nand location" as UC14
+    usecase "Get current location" as LOC
+  }
+}
+
+Student --> UC1
+Student --> UC2
+Student --> UC3
+Student --> UC4
+Student --> UC5
+Student --> UC6
+Student --> UC7
+Student --> UC8
+Student --> UC9
+Student --> UC10
+Student --> UC11
+Student --> UC12
+Student --> UC13
+Student --> UC14
+
+UC13 <-- Android
+LOC <-- Android
+
+UC7 .> CALC : <<include>>
+UC14 .> LOC : <<include>>
+
+WARN .> UC6 : <<extend>>
+UC11 .> UC9 : <<extend>>
+UC11 .> UC10 : <<extend>>
+
+note bottom of UC14
+  If location permission is denied, the next class
+  is still shown from the timetable (without distance).
+end note
+
+@enduml
