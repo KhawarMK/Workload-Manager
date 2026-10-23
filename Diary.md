@@ -1,6 +1,19 @@
 # Diary
 
+#### 4\.
 
+\*\*23 October 2026\*\*
+Setup Dao(data access object) and module entity for room data
+Implements AppDatabase for sqlite storage on the phone 
+
+
+
+
+
+#### 3\.
+
+\*\* 21 October 2026 \*\*
+Setup dependencies for room database and pushed files. Next, I'll be working on DAO and Entity setup for modules.
 
 
 
