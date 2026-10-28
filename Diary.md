@@ -1,5 +1,14 @@
 # Diary
 
+
+#### 5\.
+\*\*28 October 2026\*\*
+Created ModuleRepository to mediate between viewmodel and ui will help in the future when timetables are imported in to the app. next working on viewmodel and ui 
+
+
+
+
+
 #### 4\.
 
 \*\*23 October 2026\*\*
