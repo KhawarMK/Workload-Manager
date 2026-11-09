@@ -17,7 +17,7 @@ interface ModuleDao {
     /**
      * Retrieves all modules from the database in alphabetical order by code.
      */
-    @Query("SELECT * FROM modules ORDER BY code ASC")
+    @Query("SELECT * FROM modules ORDER BY module_code ASC")
     fun getAllModules(): Flow<List<ModuleEntity>>
 
     /**
@@ -39,12 +39,7 @@ interface ModuleDao {
      * Deletes a module from the database.
      */
     @Delete
-    suspend fun deleteModule(module: ModuleEntity)
+     suspend fun deleteModule(module: ModuleEntity)
 
-    /**
-     * Deletes a module from the database by its ID.
-     */
 
-    @Query("DELETE FROM modules WHERE id = :moduleId")
-    suspend fun deleteModuleById(moduleId: Long)
 }
