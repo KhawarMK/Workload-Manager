@@ -1,5 +1,20 @@
 # Diary
 
+#### 6\.
+\*\*9 November 2026\*\*
+Wrote Viewmodel and Modulescreen wasnt able to make commits last week because my accounts were locked due to enrollment issues. also made changes to mainactivity.kt to initiated the modules ui also fixed a mistake in ModuleDao which was causing an error.
+will be working on the ux personas and ui design next.
+
+#### 5\.
+\*\*28 October 2026\*\*
+Created ModuleRepository to mediate between viewmodel and ui will help in the future when timetables are imported in to the app. next working on viewmodel and ui 
+it does the basic insert delete and update to the database 
+
+
+
+
+
+
 #### 4\.
 
 \*\*23 October 2026\*\*
