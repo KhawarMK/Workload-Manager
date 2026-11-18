@@ -1,5 +1,14 @@
 # Diary
 
+#### 8\.
+\*\*18 November 2026\*\*
+added dependencies to improve the modules ui and wrote some unit tests for modules will be working on instrumented tests and on im proving the  modules ui next
+
+
+#### 7\.
+\*\*13 November 2026\*\*
+fixed some emulator issues was having trouble running the emulator in Android Studio.
+
 #### 6\.
 \*\*9 November 2026\*\*
 Wrote Viewmodel and Modulescreen wasnt able to make commits last week because my accounts were locked due to enrollment issues. also made changes to mainactivity.kt to initiated the modules ui also fixed a mistake in ModuleDao which was causing an error.
