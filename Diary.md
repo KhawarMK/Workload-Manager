@@ -1,5 +1,11 @@
 # Diary
+#### 9\.
+\*\*20 November 2026\*\*
+Problem: Build failed with Cause: jlink executable ...\.vscode\extensions\... does not exist, caused by Android Studio auto-detecting an experimental Java 25 runtime path
 
+Resolution: Reconfigured the Gradle JVM criteria in IDE settings
+
+commited module cards to create a cards for module similar to my figma mock up
 #### 8\.
 \*\*18 November 2026\*\*
 added dependencies to improve the modules ui and wrote some unit tests for modules will be working on instrumented tests and on im proving the  modules ui next
