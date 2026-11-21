@@ -56,7 +56,7 @@ fun ModuleScreen(
     Scaffold(
         containerColor = Color(0xFF0F0F12), // Deep dark background from mockup
         bottomBar = {
-            // --- BOTTOM ACTION BAR: [Import] & [+ Add module] ---
+            // BOTTOM ACTION BAR: [Import] & [ Add module]
             Surface(
                 color = Color(0xFF0F0F12),
                 modifier = Modifier.fillMaxWidth()
