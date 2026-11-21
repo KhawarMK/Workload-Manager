@@ -1,7 +1,24 @@
 # Diary
+#### 10\.
+\*\*21 November 2026\*\*
+Commited modulescreen.kt changes makes the screen more like my figma mock up 
+
+Problem: Couldnt get the emulator to run my updated modulescreen
+
+Resolution: Wiped Emulator data and cold booted it.
+
+
+
+Challenge: Designing the AddEditModuleDialog to seamlessly handle both creating a new module and editing an existing one without UI state
+
+
+
+To fix this, I used two simple variables in ModuleScreen
+A true/false variable (showDialog) to open and close the popup window.
+Another variable (selectedModuleForEdit) to keep track of which module the user clicked on.
 #### 9\.
 \*\*20 November 2026\*\*
-Problem: Build failed with Cause: jlink executable ...\.vscode\extensions\... does not exist, caused by Android Studio auto-detecting an experimental Java 25 runtime path
+Problem: Build failed with Cause: jlink executable ...\.vscode\extensions\... does not exist, caused by Android Studio auto-detecting an experimental Java 25 runtime path 
 
 Resolution: Reconfigured the Gradle JVM criteria in IDE settings
 
