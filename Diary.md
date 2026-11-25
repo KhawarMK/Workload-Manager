@@ -4,6 +4,8 @@
 Added delete button to the ui for modules.
 made the changes in modulecard.kt
 
+added Assignmententity and Assignmentdao
+
 
 #### 10\.
 \*\*21 November 2026\*\*
