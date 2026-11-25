@@ -5,6 +5,8 @@ Added delete button to the ui for modules.
 made the changes in modulecard.kt
 
 added Assignmententity and Assignmentdao
+- registered Assignmententity and Assignmentdao in Appdatabase.kt
+
 
 
 #### 10\.
