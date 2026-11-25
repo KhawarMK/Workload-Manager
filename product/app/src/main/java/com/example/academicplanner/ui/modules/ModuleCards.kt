@@ -15,6 +15,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.example.academicplanner.data.local.entity.ModuleEntity
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.ui.Alignment
 
 /**
  * Module Card.
@@ -75,8 +80,18 @@ fun StudyPlannerModuleCard(
                     style = MaterialTheme.typography.bodyMedium,
                     color = Color(0xFF8E8E93)
                 )
+                // DELETE BUTTON
+                IconButton(
+                    onClick = onDelete,
+                    modifier = Modifier.padding(end = 8.dp)
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Delete,
+                        contentDescription = "Delete Module",
+                        tint = Color(0xFFFF5252))// Red trash bin icon
             }
         }
     }
+}
 }
 
