@@ -1,4 +1,10 @@
 # Diary
+#### 11\.
+\*\*25 November 2026\*\*
+Added delete button to the ui for modules.
+made the changes in modulecard.kt
+
+
 #### 10\.
 \*\*21 November 2026\*\*
 Commited modulescreen.kt changes makes the screen more like my figma mock up 
