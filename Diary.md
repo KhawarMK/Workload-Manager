@@ -1,4 +1,9 @@
 # Diary
+#### 12\.
+\*\*26 November 2026\*\*
+Made the UML use-case Diagram into smaller more specific diagrams.
+
+
 #### 11\.
 \*\*25 November 2026\*\*
 Added delete button to the ui for modules.
