@@ -1,0 +1,30 @@
+@startuml use-case-track
+title Academic Planner - Tracking Subsystem
+
+left to right direction
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam nodesep 25
+skinparam ranksep 60
+skinparam usecase {
+  BorderColor #orange
+}
+
+actor "Student" as Student
+
+rectangle "Academic Planner App - Tracking" {
+  usecase "Log task progress" as UC9
+  usecase "Mark session missed" as UC10
+  usecase "Reschedule study sessions" as UC11
+  usecase "View progress and\nestimate accuracy" as UC12
+}
+
+Student --> UC9
+Student --> UC10
+Student --> UC11
+Student --> UC12
+
+UC11 .> UC9 : <<extend>>
+UC11 .> UC10 : <<extend>>
+
+@enduml
