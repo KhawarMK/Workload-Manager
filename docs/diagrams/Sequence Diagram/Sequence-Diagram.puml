@@ -1,0 +1,37 @@
+@startuml sequence-diagram
+title Academic Planner - Sequence Diagram
+
+
+skinparam sequenceMessageAlign center
+skinparam ParticipantBackgroundColor #silver
+skinparam ParticipantBorderColor #black
+skinparam DatabaseBackgroundColor #silver
+skinparam DatabaseBorderColor #black
+skinparam ActorBorderColor #black
+autonumber
+
+actor Student
+participant App
+participant Scheduler
+database Database
+
+== Generate study schedule ==
+
+Student -> App : Tap "Generate schedule"
+App -> Database : Get tasks, timetable, availability
+Database --> App : Data
+App -> Scheduler : Create schedule(data)
+Scheduler --> App : Study sessions\n(+ warning if work cannot fit)
+App -> Database : Save sessions
+App --> Student : Show schedule
+
+== Missed session and reschedule ==
+
+Student -> App : Mark session as missed
+App -> Database : Save missed session, get remaining work
+App -> Scheduler : Reschedule(remaining work)
+Scheduler --> App : New study sessions
+App -> Database : Replace future sessions
+App --> Student : Show updated plan
+
+@enduml
